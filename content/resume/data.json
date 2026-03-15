@@ -1,0 +1,32 @@
+{
+  "_comment": "履历数据 - 教育、工作经历、技能树",
+  "education": [
+    {
+      "school": "示例大学",
+      "degree": "计算机科学 学士",
+      "period": "2015 - 2019",
+      "description": "主修软件工程，辅修人机交互"
+    }
+  ],
+  "experience": [
+    {
+      "company": "示例科技",
+      "role": "全栈工程师",
+      "period": "2021 - 至今",
+      "description": "负责核心产品研发与架构优化",
+      "highlights": ["主导技术选型与架构设计", "推动前端工程化落地", "提升系统性能 40%"]
+    },
+    {
+      "company": "初创公司",
+      "role": "前端开发",
+      "period": "2019 - 2021",
+      "description": "参与产品从 0 到 1 的研发",
+      "highlights": ["搭建 React 技术栈", "实现响应式与无障碍支持"]
+    }
+  ],
+  "skills": [
+    { "name": "前端", "items": ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+    { "name": "后端", "items": ["Node.js", "Drizzle ORM", "API 设计"] },
+    { "name": "工具", "items": ["Git", "Docker", "Vercel"] }
+  ]
+}

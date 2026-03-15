@@ -1,0 +1,49 @@
+{
+  "name": "persona",
+  "version": "0.1.0",
+  "private": true,
+  "description": "个人网站系统 - 履历/作品集/社交名片/留言板/联系表单",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:init": "node scripts/db-init.mjs",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@libsql/client": "^0.5.0",
+    "drizzle-orm": "^0.29.0",
+    "tailwindcss": "^3.4.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.400.0",
+    "lenis": "^1.0.0",
+    "three": "^0.160.0",
+    "@react-three/fiber": "^8.15.0",
+    "@react-three/drei": "^9.92.0",
+    "zod": "^3.22.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^2.0.0",
+    "resend": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/three": "^0.160.0",
+    "typescript": "^5.0.0",
+    "drizzle-kit": "^0.20.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.2.0",
+    "prettier": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  }
+}

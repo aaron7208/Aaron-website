@@ -1,0 +1,17 @@
+{
+  "_comment": "作品详情 - Aaron 个人网站（本站），与履历 techProjects 一致",
+  "slug": "persona",
+  "title": "Aaron 个人网站",
+  "description": "用时一周从 0 到 1 完成的首个完整作品，AI 辅助开发，我负责定义需求和质量验收。",
+  "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Drizzle ORM", "Three.js", "Zod", "Resend"],
+  "links": { "preview": "/", "repo": null },
+  "thumbnail": "/images/portfolio/persona.png",
+  "highlights": [
+    "双模式切换（深色/浅色）",
+    "响应式布局（桌面/移动）",
+    "留言板接入千问 Qwen AI 自动审核（公序良俗）",
+    "内容管理系统",
+    "安全部署"
+  ],
+  "media": []
+}

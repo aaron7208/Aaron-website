@@ -1,0 +1,15 @@
+{
+  "_comment": "作品详情 - 博弈模型 × MBTI，与履历 techProjects 一致",
+  "slug": "game-mbti",
+  "title": "博弈模型 × MBTI",
+  "description": "基于博弈论与认知功能的 MBTI 类型测试，通过经典博弈题分析决策风格与人格特质。早期尝试，用基础技术（HTML + 少量 Python）实现想法，虽然简单，但是起点。",
+  "techStack": ["HTML", "JavaScript", "Python"],
+  "links": { "preview": "https://aaron7208.github.io/GameMBTI/", "repo": "https://github.com/aaron7208/GameMBTI" },
+  "thumbnail": "/images/portfolio/game-mbti.png",
+  "highlights": [
+    "41 个经典博弈论模型推导人格类型",
+    "极速版 / 深度版两种测试模式",
+    "基于行为选择的硬核人格推导"
+  ],
+  "media": []
+}

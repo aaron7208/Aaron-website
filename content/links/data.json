@@ -1,0 +1,7 @@
+{
+  "_comment": "社交链接配置 - 链接聚合、社交媒体入口",
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/aaron7208?tab=repositories", "icon": "github", "description": "代码仓库" },
+    { "label": "哔哩哔哩", "url": "https://space.bilibili.com/275392869?spm_id_from=333.1365.0.0", "icon": "bilibili", "description": "个人空间" }
+  ]
+}

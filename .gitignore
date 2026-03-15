@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+.next/
+out/
+build/
+dist/
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database
+*.db
+*.db-journal
+data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel
+.vercel
+
+# Drizzle
+drizzle/migrations/*.sql
+!drizzle/migrations/.gitkeep
+
+# 内部迭代/审查文档（仅本地保留，不提交）；01-08 保留在仓库
+docs/
+!docs/01-*.md
+!docs/02-*.md
+!docs/03-*.md
+!docs/04-*.md
+!docs/05-*.md
+!docs/06-*.md
+!docs/07-*.md
+!docs/08-*.md

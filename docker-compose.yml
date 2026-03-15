@@ -1,0 +1,27 @@
+# ===========================================
+# 个人网站系统 - 本地开发服务编排
+# 用于本地 SQLite 开发、可选 Redis 限流
+# ===========================================
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=file:/app/data/local.db
+      - NODE_ENV=development
+    volumes:
+      - ./data:/app/data
+    # 开发时可直接 npm run dev，此配置用于生产态本地测试
+
+  # 可选：Upstash 替代方案，本地 Redis 用于限流
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+
+# volumes:
+#   redis_data:

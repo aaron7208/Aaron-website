@@ -1,0 +1,71 @@
+/**
+ * 全局 CSS 变量、Tailwind 指令
+ * 设计令牌：主题色、字体、间距、渐变等
+ * @see docs/01-系统架构.md
+ * @see docs/10-视觉与交互优化需求报告-二轮.md
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 主色 - indigo-500 */
+    --color-primary: 99 102 241;
+    --color-primary-foreground: 255 255 255;
+    /* 强调色 - violet-500 */
+    --color-accent: 139 92 246;
+    --color-accent-foreground: 255 255 255;
+    /* 渐变 */
+    --color-gradient-start: 79 70 229; /* indigo-600 */
+    --color-gradient-end: 124 58 237; /* violet-600 */
+    /* 中性色 */
+    --color-muted: 241 245 249; /* slate-100 */
+    --color-muted-foreground: 100 116 139; /* slate-400 */
+    --color-background-subtle: 248 250 252; /* slate-50 背景微色 */
+    --color-background: 248 250 252;
+    --color-foreground: 15 23 42;
+  }
+
+  .dark {
+    --color-primary: 129 140 248; /* indigo-400 */
+    --color-primary-foreground: 15 23 42;
+    --color-accent: 167 139 250; /* violet-400 */
+    --color-accent-foreground: 15 23 42;
+    --color-gradient-start: 129 140 248;
+    --color-gradient-end: 167 139 250;
+    --color-muted: 30 41 59;
+    --color-muted-foreground: 148 163 184;
+    --color-background-subtle: 15 23 42;
+    --color-background: 15 23 42;
+    --color-foreground: 248 250 252;
+  }
+
+  body {
+    @apply text-slate-900 antialiased dark:text-slate-50;
+    background-color: rgb(var(--color-background-subtle));
+  }
+
+  html.dark body {
+    background-color: rgb(var(--color-background));
+  }
+
+}
+
+@layer utilities {
+  /* 渐变文字 Safari/WebKit 兼容 */
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* 履历页：标题随页面滚动（方案 B），仅保留锚点平滑 @see docs/23 §2 */
+  html.resume-snap {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html.resume-snap {
+      scroll-behavior: auto;
+    }
+  }
+}

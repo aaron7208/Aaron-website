@@ -1,0 +1,9 @@
+{
+  "_comment": "作品详情 - 个人网站",
+  "slug": "example",
+  "title": "个人网站",
+  "description": "使用 Next.js 14 App Router 与 Tailwind CSS 构建的响应式个人网站。支持亮/暗主题切换、SSG 静态生成、作品集与履历展示。技术栈包括 TypeScript、Framer Motion、Drizzle ORM。",
+  "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Drizzle ORM"],
+  "links": { "preview": "/", "repo": "https://github.com/example/persona" },
+  "media": []
+}

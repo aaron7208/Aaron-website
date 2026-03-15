@@ -1,0 +1,8 @@
+{
+  "_comment": "首页 Hero 配置 - avatarLight 浅色背景用，avatarDark 深色背景用",
+  "title": "Aaron",
+  "name": "Aaron",
+  "slogan": "向往已久的世界，也许触手可及",
+  "avatarLight": "/images/Aaron-light.png",
+  "avatarDark": "/images/Aaron-dark.png"
+}
