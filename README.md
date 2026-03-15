@@ -2,6 +2,20 @@
 
 个人履历、作品集、社交名片、留言板、联系表单一体化网站。
 
+## 能否直接当自己的站用？
+
+可以。克隆后按下面「快速开始」跑起来，再**替换内容**即可变成你自己的个人站：
+
+| 替换项 | 文件/目录 |
+|--------|-----------|
+| 姓名、标语、头像 | `content/home.json`，头像图放到 `public/images/` |
+| 社交链接 | `content/links/data.json` |
+| 公开履历 | `content/resume/public.json`（关于我 / 在学在用 / 经历） |
+| 作品集列表与详情 | `content/portfolio/index.json`，`content/portfolio/projects/*.json` |
+| 作品缩略图 | `public/images/portfolio/` |
+
+无需改代码，只改上述 JSON 和图片即可。模板名「Persona」可保留，仅作项目标识。
+
 ## 技术栈
 
 - **前端**: Next.js 14 (App Router)、TypeScript、Tailwind CSS、Framer Motion、Three.js/R3F

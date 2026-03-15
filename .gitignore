@@ -43,13 +43,22 @@ yarn-error.log*
 drizzle/migrations/*.sql
 !drizzle/migrations/.gitkeep
 
-# 内部迭代/审查文档（仅本地保留，不提交）；01-08 保留在仓库
-docs/
-!docs/01-*.md
-!docs/02-*.md
-!docs/03-*.md
-!docs/04-*.md
-!docs/05-*.md
-!docs/06-*.md
-!docs/07-*.md
-!docs/08-*.md
+# 内部迭代/审查文档（仅本地保留，不提交）
+docs/09-视觉与交互优化需求报告.md
+docs/10-视觉与交互优化需求报告-二轮.md
+docs/11-视觉与交互优化需求报告-三轮.md
+docs/12-视觉与交互优化需求报告-四轮.md
+docs/13-深色模式默认与修复方案.md
+docs/14-子页UI与首页统一方案.md
+docs/15-工作缺口检查报告.md
+docs/16-个人信息录入与分层保护方案.md
+docs/17-履历子页排版优化方案.md
+docs/18-履历子页问题修复说明.md
+docs/19-作品集优化与录入方案.md
+docs/20-作品集页面优化报告.md
+docs/21-全站优化报告.md
+docs/22-全站优化报告-二轮.md
+docs/23-履历页吸附与滚动优化说明.md
+docs/24-全站优化报告-最终轮.md
+docs/25-结构冗余与潜在问题检查报告.md
+docs/26-安全审查报告.md

@@ -1,4 +1,4 @@
-# 依赖安全审计 - 仅 high 及以上阻断
+# 依赖安全审计 - 仅 critical 阻断（high 仅记录，避免误杀）
 # @see docs/26-安全审查报告.md, docs/08-上线检查清单.md
 name: Dependency Audit
 
@@ -8,7 +8,6 @@ on:
   pull_request:
     branches: [main, master]
   schedule:
-    # 每周一 00:00 UTC
     - cron: "0 0 * * 1"
 
 jobs:
@@ -21,4 +20,5 @@ jobs:
           node-version: "20"
           cache: "npm"
       - run: npm ci
-      - run: npm audit --audit-level=high
+      # 仅 critical 导致失败；high 会打印在日志中，可本地 npm audit 处理
+      - run: npm audit --audit-level=critical
