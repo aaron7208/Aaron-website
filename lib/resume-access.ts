@@ -53,7 +53,7 @@ export function verifyResumeAccessCookie(cookieHeader: string | null): boolean {
   if (!value) return false;
 
   const [expiryStr, signature] = value.split(".");
-  const expiry = Number(expiryStr, 10);
+  const expiry = Number(expiryStr);
   if (!Number.isFinite(expiry) || expiry < Date.now() || !signature) return false;
 
   const expected = sign(expiry);

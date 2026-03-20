@@ -26,7 +26,7 @@ export function ResumeToc({ className }: ResumeTocProps) {
 
   React.useEffect(() => {
     const els = SECTIONS.map((s) => ({ id: s.id, el: document.getElementById(s.id) })).filter(
-      (x): x is { id: string; el: HTMLElement } => x.el != null
+      (x): x is { id: (typeof SECTIONS)[number]["id"]; el: HTMLElement } => x.el != null
     );
     if (els.length === 0) return;
 
