@@ -42,9 +42,8 @@ export function ParallaxSection({
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [50 * speed, -50 * speed]);
-  const opacity = fade
-    ? useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.5, 1, 1, 0.5])
-    : undefined;
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.5, 1, 1, 0.5]);
+  const opacity = fade ? opacityTransform : undefined;
 
   if (shouldReduce) {
     return <section ref={ref} className={cn(className)}>{children}</section>;

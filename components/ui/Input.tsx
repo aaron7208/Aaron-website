@@ -34,7 +34,8 @@ export function Input({
   disabled,
   ...props
 }: InputProps) {
-  const id = rawId ?? (label ? `input-${React.useId()}` : undefined);
+  const generatedId = React.useId();
+  const id = rawId ?? (label ? `input-${generatedId}` : undefined);
 
   return (
     <div className="w-full space-y-1.5">
