@@ -1,0 +1,14 @@
+# ===========================================
+# 个人网站系统 - 生产环境
+# 配合 docs/27-腾讯云部署指南-www.aaron7208.cn.md 使用
+# ===========================================
+# 使用前在项目根目录创建 .env.production，填入 DATABASE_URL、TURSO_AUTH_TOKEN 等
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.production
+    restart: unless-stopped

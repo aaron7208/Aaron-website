@@ -27,7 +27,6 @@ export async function GET(request: NextRequest) {
 
   const ip = getClientIp(request);
   const data = {
-    guestbook: !isRateLimited("guestbook", ip),
     contact: !isRateLimited("contact", ip),
     resume: !isRateLimited("resume", ip),
   };

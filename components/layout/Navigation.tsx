@@ -19,7 +19,7 @@ export const navItems = [
   { href: "/resume", label: "履历" },
   { href: "/portfolio", label: "作品集" },
   { href: "/links", label: "链接" },
-  { href: "/guestbook", label: "留言板" },
+  { href: "/guestbook", label: "留言板（已关闭）" },
   { href: "/contact", label: "联系" },
 ] as const;
 

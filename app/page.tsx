@@ -31,7 +31,7 @@ const modules = [
     highlight: true,
   },
   { href: "/links", label: "社交链接", icon: "link2" as const, desc: "链接聚合与社交媒体" },
-  { href: "/guestbook", label: "留言板", icon: "message-square" as const, desc: "访客留言与互动" },
+  { href: "/guestbook", label: "留言板（已关闭）", icon: "message-square" as const, desc: "访客留言与互动" },
   { href: "/contact", label: "联系我", icon: "mail" as const, desc: "私密消息与表单" },
 ];
 
