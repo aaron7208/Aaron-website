@@ -113,6 +113,8 @@ git clone https://github.com/aaron7208/Aaron-website.git persona
 cd persona
 ```
 
+**一键部署（可选）**：可运行 `deploy/run-on-server.sh`，自动完成 Docker/Nginx 安装、克隆、构建与 Nginx 配置。首次运行会生成 `.env.production` 模板，编辑填入真实值后再次执行即可。
+
 ### 4.2 创建生产环境变量文件
 
 ```bash
